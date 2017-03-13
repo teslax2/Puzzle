@@ -40,7 +40,11 @@ namespace Puzzle.Model
             _currentTime = 30;
             Init();
         }
-
+        /// <summary>
+        /// Timer
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void timeToEnd_Tick(object sender, EventArgs e)
         {
             if (CurrentTime > 0)

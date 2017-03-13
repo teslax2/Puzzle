@@ -28,8 +28,8 @@
         </ItemsControl>
         <StackPanel DataContext="{StaticResource viewModel}" Grid.Column="1" Background="#FFECD4D4">
             <TextBlock TextWrapping="Wrap" Text="Super Game!" VerticalAlignment="Top" TextAlignment="Center" Padding="0" Margin="0,20,0,0" FontSize="16" Foreground="White" FontWeight="Bold"/>
-            <Button Content="Wgraj obraz!" Command="{Binding OpenImage}" Margin="20,20,20,0" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />
-            <Button Content="Podpowiedz!" Command="{Binding ShowHint}" Margin="20,20,20,0" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />
+            <Button Content="Load Image" Command="{Binding OpenImage}" Margin="20,20,20,0" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />
+            <Button Content="Hint" Command="{Binding ShowHint}" Margin="20,20,20,0" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />
             <Label Content="{Binding CurrentTime}" Margin="0,20,0,0" Padding="70,0" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="White" BorderThickness="2" Foreground="White"/>
         </StackPanel>
         <TextBox Grid.Column="0" Text="Game Over" DataContext="{StaticResource viewModel}" Width="394" Height="102"  Visibility="{Binding GameOver, Converter={StaticResource boolVisibilityConverter}}"  HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" BorderBrush="Transparent" FontSize="72" Margin="115,185,91,282" FontFamily="Microsoft YaHei UI Light">
